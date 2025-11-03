@@ -1,0 +1,247 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9F8F0;
+  color: #4a4a4a;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #B0B77A;
+  border-bottom: 3px solid #9ba263;
+}
+
+/* LEFT - LOGO */
+.header .logo {
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #4a4a4a;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* RIGHT SIDE - nav + search + buttons */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Navigation links */
+.header-right nav {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+}
+
+.header-right nav a {
+  text-decoration: none;
+  color: #fefcec;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.header-right nav a:hover {
+  color: #82684e; /* unified hover color */
+}
+
+/* Search bar + plus + profile */
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-section input {
+  padding: 6px 10px;
+  border: 3px solid #9ba263;
+  border-radius: 15px; /* keep original radius */
+  background-color: #fefcec;
+  color: #4a4a4a;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-section input:focus {
+  border-color: #82684e; /* unified hover/focus color */
+}
+
+/* Plus (+) add button */
+.add-btn {
+  font-size: 40px;
+  background: none;
+  color: #fefcec;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: color 0.3s;
+  border-radius: 10px;
+}
+
+.add-btn:hover {
+  color: #82684e; /* unified hover color */
+}
+
+/* Profile button in header */
+.profile-btn img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%; /* keep original circular radius */
+  border: 3px solid #9ba263;
+  object-fit: cover;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.profile-btn img:hover {
+  border-color: #82684e; /* unified hover color */
+}
+
+/* ===== CONTENT ===== */
+.content {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  background-color: #FEFAE0;
+  color: #7f7d70;
+}
+
+.content h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.content p {
+  margin-bottom: 40px;
+}
+
+.intro {
+  border-bottom: 3px solid #e5e1ca;
+
+}
+
+.content .buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  margin-bottom: 35px;
+  background-color: #A6B37D;
+  color: #fefcec;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.content .buttons button:hover {
+  background-color: #82684e; /* unified hover color */
+}
+
+/* ===== EVENTS ===== */
+.event-section h2 {
+  font-size: 30px;
+  margin-top: 40px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.events {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+
+}
+
+.event-card {
+  text-align: center;
+  background-color: #fefcec;
+  border: 3px solid #e5e3d4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.event-card .event-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.event-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.event-name .event-profile-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.event-name .event-profile-btn .event-profile {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; /* keep circular radius */
+  object-fit: cover;
+  border: 2px solid #ceccbf;
+  transition: border-color 0.3s;
+}
+
+.event-name .event-profile-btn:hover .event-profile {
+  border-color: #82684e; /* unified hover color */
+}
+
+.event-card p:not(.event-name) {
+  text-align: center;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #B0B77A;
+  color: #fefcec;
+  border-top: 3px solid #9ba263;
+}
+
+.footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fefcec;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #82684e; /* unified hover color */
+}
+
+.footer-links {
+  padding-top: 20px;
+}
