@@ -1,0 +1,83 @@
+/* User List Page - Styling */
+
+/* General Styling */
+.content {
+  padding: 40px 50px;
+  background-color: #FEFAE0;
+
+}
+
+.section-title {
+  font-size: 30px;
+  color: #82684e;
+  margin-bottom: 20px;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column; /* Stacks the user cards vertically */
+  gap: 20px;
+}
+
+.user-card {
+  background-color: #fefcec;
+  border: 3px solid #e5e3d4;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center; /* Align items horizontally */
+  justify-content: space-between; /* Distribute space evenly between avatar, user info, and button */
+}
+
+/* Profile Picture (Avatar) */
+.user-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px; /* Space between avatar and user info */
+}
+
+/* User Information - username and city */
+.user-info {
+  display: flex;
+  flex-direction: row; /* Align username and city horizontally */
+  align-items: center; /* Align items vertically centered */
+  gap: 15px; /* Space between username and city */
+  flex-grow: 1; /* Ensure the info section grows to take available space */
+  padding-left: 20px;
+}
+
+.user-info h3 {
+  font-size: 22px;
+  color: #82684e;
+  margin: 0;
+}
+
+.location {
+  font-size: 16px;
+  color: #9ba263;
+}
+
+/* Follow Button */
+.follow-btn {
+  padding: 10px 20px;
+  background-color: #A6B37D;
+  color: #fefcec;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+  background-color: #82684e; /* Unified hover color */
+}
+
+/* Profile Button Image */
+.user-card .profile-btn img {
+  height: 80px;
+  width: 80px;
+}
