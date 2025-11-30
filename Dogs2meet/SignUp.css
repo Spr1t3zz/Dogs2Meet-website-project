@@ -1,0 +1,133 @@
+.signup-form {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fefcec;
+  padding: 30px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  border: 3px solid #e5e3d4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* centers children including inputs */
+}
+
+.signup-form h2 {
+  color: #7f7d70;
+  margin-bottom: 20px;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #7f7d70;
+
+  text-align: left;
+  width: 100%;                 /* full width so label aligns with input */
+}
+
+.signup-form input {
+  width: 90%;                  /* not full width, leaves space on sides */
+  max-width: 350px;            /* optional, keeps inputs from getting too wide */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 3px solid #e5e3d4;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #7f7d70;
+  transition: border-color 0.3s;
+}
+
+.signup-form input:focus {
+  border-color: #82684e;
+}
+
+.signup-form button {
+  max-width: 350px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #A6B37D;
+  color: #fefcec;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #82684e;
+}
+
+.signup-form .login-link {
+  margin-top: 15px;
+}
+
+.signup-form .login-link a {
+  color: #82684e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-form .login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Side popup next to signup form */
+.side-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -350px; /* places it next to the panel */
+  width: 300px;
+  background-color: #FEFAE0;
+  border: 3px solid #9ba263;
+  border-radius: 10px;
+  padding: 20px;
+  color: #4a4a4a;
+  z-index: 10;
+  text-align: left;
+  box-shadow: none;
+}
+
+/* So popup positions relative to the signup form */
+.signup-form {
+  position: relative;
+}
+
+/* Close button */
+.side-popup .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #82684e;
+  cursor: pointer;
+}
+
+.side-popup .close-btn:hover {
+  color: #A6B37D;
+}
+
+.side-popup h3 {
+  margin-top: 0;
+  color: #4a4a4a;
+  font-size: 18px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid red;
+  background-color: #fdd;
+  margin-bottom: 10px; /* Adds space after error message */
+}
+

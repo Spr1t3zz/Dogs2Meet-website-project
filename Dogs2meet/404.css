@@ -1,0 +1,52 @@
+/* === GLOBAL === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9F8F0;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* === TEXT === */
+.error-code {
+  font-size: 110px;
+  font-weight: bold;
+  color: #A6B37D;
+  margin: 0;
+}
+
+.error-title {
+  font-size: 30px;
+  color: #82684e;
+  margin: 10px 0 15px 0;
+}
+
+.error-text {
+  font-size: 17px;
+  color: #7f7d70;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+/* === BUTTON === */
+.back-btn {
+  padding: 12px 25px;
+  background-color: #A6B37D;
+  color: #fefcec;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #82684e;
+}

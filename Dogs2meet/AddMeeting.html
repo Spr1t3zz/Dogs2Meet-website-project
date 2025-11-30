@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs2meet - Přidat příspěvek</title>
+  <link rel="stylesheet" href="MainPage.css">
+  <link rel="stylesheet" href="Login.css"> <!-- Reusing the Login.css -->
+  <link rel="stylesheet" href="AddingMeeting.css">
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+  <div class="header-left">
+    <div class="logo">LOGO</div>
+  </div>
+  <div class="header-right">
+    <nav class="nav-links">
+      <a href="index.html">Domů</a>
+      <a href="AkcePage.html">Akce</a>
+      <a href="OnasPage.html">O nás</a>
+      <a href="FAQ.html">FAQ</a>
+    </nav>
+    <div class="search-section">
+      <input type="text" placeholder="Hledat...">
+      <button class="icon-btn add-btn">+</button>
+      <div class="profile-btn">
+        <a href="LogIn.html">
+          <img src="profileIcon.png" alt="Profil">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="content">
+  <div class="login-form"> <!-- Reusing the login-form class -->
+    <h2>Přidat novou schůzku</h2>
+    <form action="MyProfile.html" method="POST" enctype="multipart/form-data">
+      <!-- Místo schůzky -->
+      <label for="location">Místo schůzky</label>
+      <input type="text" id="location" name="location" placeholder="Zadejte místo schůzky" required>
+
+      <!-- Datum -->
+      <label for="date">Datum</label>
+      <input type="date" id="date" name="date" required>
+
+      <!-- Čas -->
+      <label for="time">Čas</label>
+      <input type="time" id="time" name="time" required>
+
+      <!-- Google Map Location -->
+      <label for="map">Přesná poloha (Google Map)</label>
+      <div id="map"></div> <!-- Google Map placeholder -->
+
+      <!-- Save Button -->
+      <button type="submit">Přidat schůzku</button>
+
+      <!-- Cancel Button -->
+      <a href="MyProfile.html"><button type="button" class="cancel-btn">Zrušit</button></a>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="footer-links">
+    <a href="index.html">Domů</a>
+    <a href="AkcePage.html">Aktuální akce</a>
+    <a href="OnasPage.html">O nás</a>
+    <a href="Kontakty.html">Kontakty</a>
+    <a href="FAQ.html">FAQ</a>
+  </div>
+  <p>© 2025 Dogs2meet. Všechna práva vyhrazena.</p>
+</div>
+
+</body>
+</html>

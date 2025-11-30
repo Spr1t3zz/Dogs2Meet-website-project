@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs2meet - Upravit profil</title>
+  <link rel="stylesheet" href="MainPage.css">
+  <link rel="stylesheet" href="Editing.css">
+</head>
+<body>
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="logo">LOGO</div>
+  </div>
+  <div class="header-right">
+    <nav class="nav-links">
+      <a href="index.html">Domů</a>
+      <a href="AkcePage.html">Akce</a>
+      <a href="OnasPage.html">O nás</a>
+      <a href="FAQ.html">FAQ</a>
+    </nav>
+
+    <div class="search-section">
+      <input type="text" placeholder="Hledat...">
+      <button class="icon-btn add-btn">+</button>
+      <div class="profile-btn">
+        <a href="LogIn.html">
+          <img src="profileIcon.png" alt="Profil">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROFILE EDIT PAGE -->
+<div class="content">
+  <div class="login-form">
+    <h2>Upravit profil</h2>
+    <form action="saveProfileChanges.html" method="POST" enctype="multipart/form-data">
+      <!-- Username Field -->
+      <label for="username">Uživatelské jméno:</label>
+      <input type="text" id="username" name="username" placeholder="Zadejte nové uživatelské jméno" required>
+
+      <!-- City Field -->
+      <label for="city">Město:</label>
+      <input type="text" id="city" name="city" placeholder="Zadejte vaše město" required>
+
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Zadejte váš email" required>
+
+      <!-- Bio Field -->
+      <label for="bio">Bio:</label>
+      <input type="text" id="bio" name="bio" placeholder="Napište něco o sobě...">
+
+      <!-- Profile Picture Field -->
+      <label for="profilePic">Profilová fotka:</label>
+      <input type="file" id="profilePic" name="profilePic">
+
+      <!-- Save Changes Button -->
+      <button type="submit">Uložit změny</button>
+
+      <!-- Cancel Button -->
+      <button type="button" onclick="window.location.href='MyProfile.html';">Zrušit</button>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-links">
+    <a href="index.html">Domů</a>
+    <a href="AkcePage.html">Aktuální akce</a>
+    <a href="OnasPage.html">O nás</a>
+    <a href="Kontakty.html">Kontakty</a>
+    <a href="FAQ.html">FAQ</a>
+  </div>
+  <p>© 2025 Dogs2meet. Všechna práva vyhrazena.</p>
+</div>
+</body>
+</html>
